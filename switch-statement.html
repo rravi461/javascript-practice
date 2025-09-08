@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Javascript Beginer to Advance</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="assets/css/style.css" > 
+</head>
+<body>
+    <h1>Switch Statement</h1>
+    <h3>Please Enter your choice</h3>
+    <ul>
+        <li>Addition</li>
+        <li>Substraction</li>
+        <li>Multiplication</li>
+    </ul>
+    <form>
+        <input type="text" name="" id="myChoices" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <br>
+        <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onclick="myChoiceFun()">Click Me</button>
+    </form>
+    <script>
+        function myChoiceFun() {
+            var choice = document.getElementById("myChoices").value;
+            //alert(choice);
+
+            switch (choice) {
+                case "add" : var a = 10;
+                            var b = 20;
+                            var sum = a + b;
+                            document.write("addition of two no is " + sum );
+                        break;
+                case "sub" : var a = 10;
+                            var b = 20;
+                            var sub = a - b;
+                            document.write("substraction of two no is " + sub );
+                        break;
+                case "mult" : var a = 10;
+                            var b = 20;
+                            var mult = a * b;
+                            document.write("multiplication of two no is " + mult );
+                        break;
+                default : alert("Given input choice is not valid");
+
+            }
+        }
+
+    </script>
+</body>
+</html> 

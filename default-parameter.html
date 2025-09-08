@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Javascript Beginner to Advance</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="assets/css/style.css"> 
+</head>
+<body> 
+
+    <div class="w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 max-w-2xl mx-auto mt-10">
+        <!-- Header -->
+        <div class="flex items-center justify-center p-4 md:p-5 border-b rounded-t bg-red-600 border-gray-200 dark:border-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white uppercase">BMI Calculator</h5>
+        </div>
+
+        <!-- Body -->
+        <div class="p-4 md:p-5">
+            <form class="space-y-6 text-center">
+                <!-- Two input fields -->
+                <div class="grid gap-6 mb-6 md:grid-cols-2">
+                    <div>
+                        <input type="text" id="yourName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Your Name" />
+                    </div>
+                    <div>
+                        <input type="text" id="loveName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Partner's Name" />
+                    </div>
+                </div>
+
+                <!-- Button centered -->
+                <div class="flex justify-center">
+                    <button type="button" onclick="calculateLove()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Calculate Love %
+                    </button>
+                </div>
+
+                <!-- Result field centered & smaller -->
+                <div class="flex justify-center">
+                    <input type="text" id="showResult" readonly class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg text-center w-1/2 p-2.5" placeholder="See Result Here" />
+                </div>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex items-center justify-center p-4 md:p-5 border-t bg-gray-50 border-gray-200 dark:border-gray-600">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white uppercase">God Bless Your Relationship</h5>
+        </div>
+    </div>
+
+<script>
+    const sum = (a,b=4) => {
+        console.log(`the sum of two no is ${a+b} `);
+    }
+    sum(10);
+    
+</script>
+
+</body>
+</html>

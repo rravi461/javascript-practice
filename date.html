@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Javascript Beginer to Advance</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="assets/css/style.css" > 
+</head>
+<body>
+    <h1 id="title" class="text-3xl font-bold">Date</h1>
+    <h3 class="font-bold">Welcome to next learning videos of javascript</h3>
+
+    
+    
+    
+    <script>
+        //1st Method
+        var d =  new Date();
+        document.write(d);
+        document.write("<br>")
+
+        //2nd Method
+        var dateObj = new Date();
+        var month = dateObj.getUTCMonth() + 1;
+        var day = dateObj.getUTCDay();
+        var year = dateObj.getUTCFullYear();
+
+        document.write(year + "/" + month + "/" + day);
+        document.write("<br>")
+
+        //3rd set Method
+        var d = new Date();
+        document.write("<br>");
+        d.setMonth(11);
+        d.setFullYear(2025, 7, 16);
+        d.setDate(17);
+        document.write(d);
+    </script>
+
+</body>
+</html> 
